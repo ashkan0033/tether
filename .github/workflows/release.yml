@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: "Existing tag to (re)build, e.g. v1.2.0"
+        description: "Version tag to build, e.g. v1.1.1-rc.1. A new prerelease tag is created after its builds pass."
         required: true
 permissions:
   contents: read
@@ -29,12 +29,19 @@ jobs:
     outputs:
       version: ${{ steps.v.outputs.version }}
       prerelease: ${{ steps.v.outputs.prerelease }}
+      source_sha: ${{ steps.v.outputs.source_sha }}
     steps:
       - uses: actions/checkout@v7
         with:
-          ref: ${{ env.TAG }}
+          fetch-depth: 0
       - id: v
         run: |
+          if git show-ref --verify --quiet "refs/tags/$TAG"; then
+            git checkout --detach "refs/tags/$TAG"
+          elif [ "$GITHUB_EVENT_NAME" != workflow_dispatch ] || [ "$GITHUB_REF" != refs/heads/main ] || [[ "$TAG" != *-* ]]; then
+            echo "::error::a new prerelease must be dispatched from main"; exit 1
+          fi
+          echo "source_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
           version=$(tr -d '[:space:]' < VERSION)
           if [ "v$version" != "$TAG" ]; then
             echo "::error::tag $TAG does not match VERSION ($version)"; exit 1
@@ -60,7 +67,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
-          ref: ${{ env.TAG }}
+          ref: ${{ needs.check.outputs.source_sha }}
       - uses: actions/setup-java@v6
         with:
           distribution: temurin
@@ -99,10 +106,10 @@ jobs:
           SUFFIX: ${{ steps.key.outputs.suffix }}
         run: |
           mkdir -p dist
-          cp android/app/build/outputs/apk/release/app-release.apk "dist/Tether-A54-$VERSION$SUFFIX.apk"
-          cp android/client/build/outputs/apk/release/client-release.apk "dist/Tether-Client-$VERSION$SUFFIX.apk"
+          cp android/app/build/outputs/apk/release/app-release.apk "dist/Clark-Android-Host-$VERSION$SUFFIX.apk"
+          cp android/client/build/outputs/apk/release/client-release.apk "dist/Clark-Android-Client-$VERSION$SUFFIX.apk"
           aapt2=$(find "$ANDROID_HOME/build-tools" -name aapt2 | sort | tail -1)
-          "$aapt2" dump badging "dist/Tether-A54-$VERSION$SUFFIX.apk" | head -1
+          "$aapt2" dump badging "dist/Clark-Android-Host-$VERSION$SUFFIX.apk" | head -1
           rm -f "$RUNNER_TEMP/release.jks"
       - uses: actions/upload-artifact@v7
         with:
@@ -113,12 +120,12 @@ jobs:
   apple:
     name: iPhone app (unsigned) and Swift package
     needs: check
-    runs-on: macos-15
+    runs-on: macos-15-intel
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v7
         with:
-          ref: ${{ env.TAG }}
+          ref: ${{ needs.check.outputs.source_sha }}
       - name: Swift package TetherCore builds at this tag
         working-directory: ios/TetherCore
         run: swift build -c release
@@ -138,7 +145,7 @@ jobs:
           /usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' -c 'Print CFBundleVersion' "$app/Info.plist"
           mkdir -p work/Payload dist
           cp -R "$app" work/Payload/
-          (cd work && zip -qry "../dist/Tether-$VERSION-unsigned.ipa" Payload)
+          (cd work && zip -qry "../dist/Clark-iOS-$VERSION-unsigned.ipa" Payload)
       - uses: actions/upload-artifact@v7
         with:
           name: ios
@@ -157,12 +164,13 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
-          ref: ${{ env.TAG }}
+          ref: ${{ needs.check.outputs.source_sha }}
       - uses: actions/download-artifact@v8
         with:
           path: dist
           merge-multiple: true
       - name: AltStore / SideStore source (stable address releases/latest/download/altstore.json)
+        if: needs.check.outputs.prerelease != 'true'
         env:
           VERSION: ${{ needs.check.outputs.version }}
         run: |
@@ -201,12 +209,14 @@ jobs:
             echo
             echo "| File | Install it on |"
             echo "| --- | --- |"
-            echo "| \`Tether-A54-$VERSION*.apk\` | **The Android phone with the SIM cards** (any Android 10+ phone, not only an A54). Everyone needs this one. |"
-            echo "| \`Tether-$VERSION-unsigned.ipa\` | **Your iPhone or iPad** (iOS 16+). Sideload it with SideStore, AltStore or Sideloadly and your own Apple ID. |"
-            echo "| \`Tether-Client-$VERSION*.apk\` | **A second Android phone** used instead of an iPhone (only if you have no iPhone). |"
+            echo "| \`Clark-Android-Host-$VERSION*.apk\` | **The Android phone with the SIM cards** (Android 8+ with BLE advertising). Everyone needs this one. |"
+            echo "| \`Clark-iOS-$VERSION-unsigned.ipa\` | **Your iPhone or iPad** (iOS 16+). Sideload it with SideStore, AltStore or Sideloadly and your own Apple ID. |"
+            echo "| \`Clark-Android-Client-$VERSION*.apk\` | **A second Android phone** used instead of an iPhone (only if you have no iPhone). |"
             echo
-            echo "- **AltStore / SideStore source** (add it once, then install and update from the app):"
-            echo "  \`https://github.com/${{ github.repository }}/releases/latest/download/altstore.json\`"
+            if [ -f dist/altstore.json ]; then
+              echo "- **AltStore / SideStore source** (add it once, then install and update from the app):"
+              echo "  \`https://github.com/${{ github.repository }}/releases/latest/download/altstore.json\`"
+            fi
             echo "- Step by step: [Install guide](https://github.com/${{ github.repository }}/blob/main/docs/INSTALL.md) ·"
             echo "  [راهنمای فارسی](https://github.com/${{ github.repository }}/blob/main/docs/fa/README.md)"
             echo "- A free Apple ID signs the iPhone app for 7 days; refresh it before then (your data and pairing are kept)."
@@ -222,6 +232,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           VERSION: ${{ needs.check.outputs.version }}
           PRERELEASE: ${{ needs.check.outputs.prerelease }}
+          SOURCE_SHA: ${{ needs.check.outputs.source_sha }}
         run: |
           flags=""
           [ "$PRERELEASE" = true ] && flags="--prerelease"
@@ -229,5 +240,5 @@ jobs:
             gh release upload "$TAG" dist/* --clobber
             gh release edit "$TAG" --notes-file notes.md
           else
-            gh release create "$TAG" dist/* --title "Tether $VERSION" --notes-file notes.md --verify-tag $flags
+            gh release create "$TAG" dist/* --title "Clark $VERSION" --notes-file notes.md --target "$SOURCE_SHA" $flags
           fi

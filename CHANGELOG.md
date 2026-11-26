@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## 1.1.1-rc.1 — 2026-11-26
+
+- First Clark test release for Android and iOS.
+- Persian and English app names, plus redesigned iPhone connection, QR scanning and manual pairing screens.
+- Android debug APKs, the unsigned iPhone build and simulator tests were verified. Physical-device pairing, calls and audio still need validation.
+
 ### Call audio on the Android phone
 
 - The phone's own microphone is kept out of bridged calls fully automatically: the default setting tries a redirect
