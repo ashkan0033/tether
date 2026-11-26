@@ -1,6 +1,6 @@
 /* Persian (فارسی). Layout mirrors automatically (RTL). */
 "All" = "همه";
-"Allow Bluetooth for Tether in Settings" = "در تنظیمات، بلوتوث را برای تتر مجاز کنید";
+"Allow Bluetooth for Clark in Settings" = "در تنظیمات، بلوتوث را برای کلارک مجاز کنید";
 "Android phone silent" = "گوشی اندروید بی‌صدا";
 "Audio helper" = "دستیار صدا";
 "Battery" = "باتری";
@@ -43,7 +43,7 @@
 "Not set" = "تنظیم نشده";
 "Off" = "خاموش";
 "On" = "روشن";
-"On the Android phone, open Tether and tap Pair iPhone, then scan the code. Calls, messages, contacts and call history stay between the two phones; there is no server." = "روی گوشی اندروید تتر را باز کنید و «جفت کردن آیفون» را بزنید، سپس کد را اسکن کنید. تماس‌ها، پیام‌ها، مخاطبین و سابقه تماس فقط بین دو گوشی می‌ماند؛ هیچ سروری در کار نیست.";
+"On the Android phone, open Clark and tap Pair iPhone, then scan the code. Calls, messages, contacts and call history stay between the two phones; there is no server." = "روی گوشی اندروید کلارک را باز کنید و «جفت کردن آیفون» را بزنید، سپس کد را اسکن کنید. تماس‌ها، پیام‌ها، مخاطبین و سابقه تماس فقط بین دو گوشی می‌ماند؛ هیچ سروری در کار نیست.";
 "Other" = "سایر";
 "Out of reach" = "خارج از دسترس";
 "Out of reach, will reconnect automatically" = "خارج از دسترس، خودکار دوباره وصل می‌شود";
@@ -58,7 +58,7 @@
 "Run call-audio self-test" = "آزمون صدای تماس";
 "Running" = "در حال اجرا";
 "Save" = "ذخیره";
-"Scan the code shown in Tether on the Android phone." = "کدی را که تتر روی گوشی اندروید نشان می‌دهد اسکن کنید.";
+"Scan the code shown in Clark on the Android phone." = "کدی را که کلارک روی گوشی اندروید نشان می‌دهد اسکن کنید.";
 "Search contacts" = "جستجوی مخاطبین";
 "Search messages" = "جستجوی پیام‌ها";
 "Send" = "ارسال";
@@ -69,9 +69,9 @@
 "Stopped" = "متوقف";
 "Sync everything again" = "همگام‌سازی کامل دوباره";
 "Syncing…" = "در حال همگام‌سازی…";
-"Tether" = "تتر";
+"Clark" = "کلارک";
 "Text message" = "پیامک";
-"That is not a Tether pairing code." = "این کد جفت‌سازی تتر نیست.";
+"That is not a Clark pairing code." = "این کد جفت‌سازی کلارک نیست.";
 "The contact is saved on your Android phone." = "مخاطب روی گوشی اندروید شما ذخیره می‌شود.";
 "To" = "به";
 "Type" = "نوع";
@@ -100,7 +100,7 @@
 "Touch to return to call" = "برای بازگشت به تماس لمس کنید";
 "Message too long" = "پیام خیلی طولانی است";
 "Will send when the Android phone is back in reach" = "وقتی گوشی اندروید در دسترس باشد ارسال می‌شود";
-"Tether keeps the link in the background and when the screen is locked. Swiping Tether away in the app switcher stops it until you open it again: iOS does not relaunch a force-quit app for Bluetooth." = "تتر در پس‌زمینه و هنگام قفل بودن صفحه هم وصل می‌ماند. اگر تتر را در فهرست برنامه‌ها با کشیدن ببندید، تا باز کردن دوباره متوقف می‌شود: iOS برنامه‌ای را که به‌اجبار بسته شده برای بلوتوث دوباره اجرا نمی‌کند.";
+"Clark keeps the link in the background and when the screen is locked. Swiping Clark away in the app switcher stops it until you open it again: iOS does not relaunch a force-quit app for Bluetooth." = "کلارک در پس‌زمینه و هنگام قفل بودن صفحه هم وصل می‌ماند. اگر کلارک را در فهرست برنامه‌ها با کشیدن ببندید، تا باز کردن دوباره متوقف می‌شود: iOS برنامه‌ای را که به‌اجبار بسته شده برای بلوتوث دوباره اجرا نمی‌کند.";
 "Text Message · SMS" = "پیامک";
 "Not Delivered" = "تحویل نشد";
 "Sending…" = "در حال ارسال…";
@@ -148,7 +148,7 @@
 "Kept on the Android phone and shared by all your devices." = "روی گوشی اندروید نگه داشته می‌شود و در همهٔ دستگاه‌هایتان یکسان است.";
 "No Blocked Contacts" = "مخاطب مسدودی نیست";
 "This is the Android phone's own block list: it refuses these calls and messages itself, whichever device you use." = "این فهرست مسدودهای خود گوشی اندروید است: گوشی این تماس‌ها و پیام‌ها را خودش رد می‌کند، با هر دستگاهی که کار کنید.";
-"Tether rejects these calls and does not forward these messages to your devices." = "تتر این تماس‌ها را رد می‌کند و این پیام‌ها را به دستگاه‌هایتان نمی‌فرستد.";
+"Clark rejects these calls and does not forward these messages to your devices." = "کلارک این تماس‌ها را رد می‌کند و این پیام‌ها را به دستگاه‌هایتان نمی‌فرستد.";
 "The Android phone is not connected." = "گوشی اندروید وصل نیست.";
 "Not deleted" = "حذف نشد";
 
@@ -179,7 +179,6 @@
 "Airplane mode" = "حالت هواپیما";
 "Network · %@" = "شبکه · %@";
 "Turn on the hotspot and join it in Settings › Wi-Fi to use the Android phone's internet here. Bluetooth tethering is slower: after switching it on, tap the Android phone in Settings › Bluetooth. Airplane mode keeps Bluetooth on so this link stays up; if the link is not back within 90 seconds it switches itself off. The hotspot and Bluetooth tethering come back on after it." = "برای استفاده از اینترنت گوشی اندروید، هات‌اسپات را روشن کنید و در تنظیمات › Wi-Fi به آن وصل شوید. اشتراک بلوتوث کندتر است: پس از روشن کردن، در تنظیمات › بلوتوث روی گوشی اندروید بزنید. حالت هواپیما بلوتوث را روشن نگه می‌دارد تا این اتصال برقرار بماند؛ اگر اتصال تا ۹۰ ثانیه برنگردد، خودش خاموش می‌شود. هات‌اسپات و اشتراک بلوتوث پس از آن دوباره روشن می‌شوند.";
-"On the Android phone, open Tether and tap Pair iPhone, then scan the code with the Camera or here (or paste it). Calls, messages, contacts and call history stay between your devices; there is no server." = "روی گوشی اندروید، تتر را باز کنید و «جفت کردن آیفون» را بزنید، سپس کد را با دوربین یا همین‌جا اسکن کنید (یا بچسبانید). تماس‌ها، پیام‌ها، مخاطبان و تاریخچهٔ تماس فقط بین دستگاه‌های شما می‌ماند؛ سروری در کار نیست.";
 "A free Apple account's signature lasts 7 days. Renew it by running tools/reinstall-ios.sh on your Mac with this device unlocked and connected." = "امضای حساب رایگان اپل ۷ روز اعتبار دارد. برای تمدید، tools/reinstall-ios.sh را روی مک اجرا کنید، در حالی که این دستگاه قفل نیست و وصل است.";
 "Move here" = "انتقال به اینجا";
 "On %@" = "روی %@";
@@ -208,7 +207,7 @@
 "Vibrate" = "لرزش";
 "Silent" = "بی‌صدا";
 "Not a carrier code (like *123#)" = "کد اپراتور معتبر نیست (مثل ‎*123#‎)";
-"Silent needs Do Not Disturb access for Tether on the Android phone." = "برای حالت بی‌صدا، Tether روی گوشی اندرویدی باید به «مزاحم نشوید» دسترسی داشته باشد.";
+"Silent needs Do Not Disturb access for Clark on the Android phone." = "برای حالت بی‌صدا، کلارک روی گوشی اندرویدی باید به «مزاحم نشوید» دسترسی داشته باشد.";
 "Carrier codes are sent from the Android phone's SIM and may cost money. Find phone rings the Android phone loudly for up to 30 seconds, until it is unlocked or you switch it off." = "کدهای اپراتور از سیم‌کارت گوشی اندرویدی ارسال می‌شوند و ممکن است هزینه داشته باشند. «پیدا کردن گوشی» گوشی اندرویدی را تا ۳۰ ثانیه بلند زنگ می‌زند، تا وقتی قفلش باز شود یا آن را خاموش کنید.";
 
 /* Numbers from other apps (tel: links, Shortcuts, the Phone app's Recents) */
@@ -234,8 +233,8 @@
 "Not muted by the phone" = "گوشی آن را قطع نمی‌کند";
 "Not checked" = "بررسی نشده";
 "Call audio is not available on this Android phone: it needs Android 11 or later. Calls are still answered, placed and ended here, but you hear and speak on the Android phone." = "صدای تماس روی این گوشی اندروید در دسترس نیست: به اندروید ۱۱ یا جدیدتر نیاز دارد. تماس‌ها همچنان از اینجا پاسخ داده، گرفته و قطع می‌شوند، اما صدا را روی گوشی اندروید می‌شنوید و همان‌جا صحبت می‌کنید.";
-"Tether may not use this iPhone's microphone, so the other side hears nothing. Allow it in Settings › Privacy & Security › Microphone." = "تتر اجازهٔ استفاده از میکروفون این آیفون را ندارد، برای همین طرف مقابل چیزی نمی‌شنود. در تنظیمات › حریم خصوصی و امنیت › میکروفون اجازه دهید.";
-"Off is safest: on some Android phones muting their microphone also mutes your voice for the other side. When it is on, Tether checks during each call and turns the mute off if your voice does not get through." = "خاموش امن‌تر است: در بعضی گوشی‌های اندروید بی‌صدا کردن میکروفون، صدای شما را هم برای طرف مقابل قطع می‌کند. وقتی روشن است، تتر در هر تماس بررسی می‌کند و اگر صدای شما نرسد، بی‌صدا کردن را خاموش می‌کند.";
+"Clark may not use this iPhone's microphone, so the other side hears nothing. Allow it in Settings › Privacy & Security › Microphone." = "کلارک اجازهٔ استفاده از میکروفون این آیفون را ندارد، برای همین طرف مقابل چیزی نمی‌شنود. در تنظیمات › حریم خصوصی و امنیت › میکروفون اجازه دهید.";
+"Off is safest: on some Android phones muting their microphone also mutes your voice for the other side. When it is on, Clark checks during each call and turns the mute off if your voice does not get through." = "خاموش امن‌تر است: در بعضی گوشی‌های اندروید بی‌صدا کردن میکروفون، صدای شما را هم برای طرف مقابل قطع می‌کند. وقتی روشن است، کلارک در هر تماس بررسی می‌کند و اگر صدای شما نرسد، بی‌صدا کردن را خاموش می‌کند.";
 
 /* Call audio: the Android phone's microphone (issue #2) */
 "Android phone's microphone" = "میکروفون گوشی اندروید";
@@ -245,18 +244,23 @@
 "Microphone out of the call" = "میکروفون بیرون از تماس";
 "Microphone muted" = "میکروفون بی‌صدا";
 "Microphone on" = "میکروفون روشن";
-"Muting works on some phones only: on others it also mutes your voice for the other side. Tether checks during each call and turns the mute off if your voice does not get through." = "بی‌صدا کردن فقط روی بعضی گوشی‌ها کار می‌کند: روی بقیه صدای شما را هم برای طرف مقابل قطع می‌کند. Tether در هر تماس بررسی می‌کند و اگر صدای شما نرسد، بی‌صدا کردن را خاموش می‌کند.";
+"Muting works on some phones only: on others it also mutes your voice for the other side. Clark checks during each call and turns the mute off if your voice does not get through." = "بی‌صدا کردن فقط روی بعضی گوشی‌ها کار می‌کند: روی بقیه صدای شما را هم برای طرف مقابل قطع می‌کند. کلارک در هر تماس بررسی می‌کند و اگر صدای شما نرسد، بی‌صدا کردن را خاموش می‌کند.";
 "The Android phone's microphone stays in the call: the other side may hear your voice twice, and the room around the phone." = "میکروفون گوشی اندروید در تماس می‌ماند: ممکن است طرف مقابل صدای شما را دو بار بشنود، همراه با صدای اطراف آن گوشی.";
-"Tether puts the call in Android's redirect audio mode: the Android phone's own microphone and earpiece leave the call, so the other side hears only this iPhone. Tether checks that both directions still work and keeps the microphone on where the phone does not allow it." = "Tether تماس را به حالت صوتی «هدایت تماس» اندروید می‌برد: میکروفون و بلندگوی مکالمهٔ گوشی اندروید از تماس بیرون می‌روند و طرف مقابل فقط صدای این آیفون را می‌شنود. Tether بررسی می‌کند که صدا در هر دو جهت برقرار بماند و جایی که گوشی اجازه ندهد، میکروفون را روشن نگه می‌دارد.";
+"Clark puts the call in Android's redirect audio mode: the Android phone's own microphone and earpiece leave the call, so the other side hears only this iPhone. Clark checks that both directions still work and keeps the microphone on where the phone does not allow it." = "کلارک تماس را به حالت صوتی «هدایت تماس» اندروید می‌برد: میکروفون و بلندگوی مکالمهٔ گوشی اندروید از تماس بیرون می‌روند و طرف مقابل فقط صدای این آیفون را می‌شنود. کلارک بررسی می‌کند که صدا در هر دو جهت برقرار بماند و جایی که گوشی اجازه ندهد، میکروفون را روشن نگه می‌دارد.";
 
 /* First run and pairing links */
 "Set up" = "راه‌اندازی";
-"Install Tether on the Android phone that holds your SIMs and do its Setup steps (permissions, default phone app, battery, wireless debugging)." = "تتر را روی گوشی اندرویدی که سیم‌کارت‌هایتان در آن است نصب کنید و مراحل راه‌اندازی آن را انجام دهید (مجوزها، برنامهٔ پیش‌فرض تلفن، باتری، اشکال‌زدایی بی‌سیم).";
-"On the Android phone, open Tether and tap Pair iPhone. A QR code appears for 5 minutes." = "روی گوشی اندروید تتر را باز کنید و «جفت کردن آیفون» را بزنید. یک کد QR به مدت ۵ دقیقه نمایش داده می‌شود.";
-"Point this iPhone's Camera at the code and tap Open in Cellular, or tap the button below and scan it here." = "دوربین این آیفون را به سمت کد بگیرید و «باز کردن در Cellular» را بزنید، یا دکمهٔ پایین را بزنید و همین‌جا اسکن کنید.";
-"Allow what the iPhone asks: Bluetooth (the link to the phone), Microphone (your voice in calls) and Notifications (calls and new texts)." = "آنچه آیفون می‌پرسد را مجاز کنید: بلوتوث (اتصال به گوشی)، میکروفون (صدای شما در تماس) و اعلان‌ها (تماس‌ها و پیامک‌های تازه).";
+"Connect your Android phone" = "گوشی اندرویدی‌تان را وصل کنید";
+"Use your Android SIM for calls and texts on this device." = "با سیم‌کارت گوشی اندرویدی، از همین دستگاه تماس بگیرید و پیامک بفرستید.";
+"Set up Clark on Android" = "راه‌اندازی کلارک در اندروید";
+"On the phone with the SIM, install Clark and complete its setup." = "کلارک را روی گوشی سیم‌کارت‌دار نصب کنید و مراحل راه‌اندازی را انجام دهید.";
+"Show the pairing code" = "نمایش کد جفت‌سازی";
+"In Clark on Android, tap Pair iPhone. The QR code is available for five minutes." = "در کلارکِ گوشی اندرویدی، «جفت کردن آیفون» را بزنید. کد QR تا پنج دقیقه معتبر است.";
+"Scan with this device" = "اسکن با همین دستگاه";
+"Keep both phones nearby. You can also enter the code manually from the scanner." = "دو گوشی را نزدیک هم نگه دارید. در صفحهٔ اسکن می‌توانید کد را دستی هم وارد کنید.";
+"Turn on Bluetooth in Settings on this device before pairing." = "پیش از جفت‌سازی، بلوتوث را در تنظیمات این دستگاه روشن کنید.";
 "Scan Pairing Code" = "اسکن کد جفت‌سازی";
-"Keep both phones close while pairing. Nothing goes through a server." = "هنگام جفت کردن دو گوشی را نزدیک هم نگه دارید. هیچ چیزی از سرور نمی‌گذرد.";
+"Calls and texts stay on your devices and travel over an encrypted Bluetooth link." = "تماس‌ها و پیامک‌ها در دستگاه‌های شما می‌مانند و از طریق بلوتوث رمزنگاری‌شده منتقل می‌شوند.";
 "Pair with %@?" = "با %@ جفت شود؟";
 "the Android phone" = "گوشی اندروید";
 "This replaces the current pairing and removes the synced data from this iPhone." = "این کار جفت‌سازی فعلی را جایگزین می‌کند و داده‌های همگام‌شده را از این آیفون پاک می‌کند.";
@@ -265,10 +269,21 @@
 "Paste or type a pairing code you have as text (tether1:… or tether://pair?…). The Android phone shows it as a QR code: scanning is quicker." = "کد جفت‌سازی را که به صورت متن دارید بچسبانید یا تایپ کنید (tether1:… یا tether://pair?…). گوشی اندروید آن را به صورت کد QR نشان می‌دهد: اسکن سریع‌تر است.";
 
 /* This iPhone's microphone (issue #14) */
-"Microphone off for Tether" = "میکروفون برای Tether خاموش است";
+"Microphone off for Clark" = "میکروفون برای کلارک خاموش است";
 "The other side cannot hear you. Allow the microphone in Settings › Privacy & Security › Microphone." = "طرف مقابل صدای شما را نمی‌شنود. در تنظیمات › حریم خصوصی و امنیت › میکروفون اجازه دهید.";
-"Microphone off for Tether: the other side cannot hear you. Allow it in Settings › Privacy & Security › Microphone." = "میکروفون برای Tether خاموش است: طرف مقابل صدای شما را نمی‌شنود. در تنظیمات › حریم خصوصی و امنیت › میکروفون اجازه دهید.";
+"Microphone off for Clark: the other side cannot hear you. Allow it in Settings › Privacy & Security › Microphone." = "میکروفون برای کلارک خاموش است: طرف مقابل صدای شما را نمی‌شنود. در تنظیمات › حریم خصوصی و امنیت › میکروفون اجازه دهید.";
 "This iPhone's microphone gives no sound: the other side may not hear you." = "میکروفون این آیفون صدایی نمی‌دهد: ممکن است طرف مقابل صدای شما را نشنود.";
 "Does not reach: microphone off on this iPhone" = "نمی‌رسد: میکروفون این آیفون خاموش است";
 "Does not reach: no sound from this iPhone's microphone" = "نمی‌رسد: از میکروفون این آیفون صدایی نمی‌آید";
 "Open Settings" = "باز کردن تنظیمات";
+
+/* Pairing scanner */
+"Enter Code Manually" = "ورود دستی کد";
+"Starting camera…" = "در حال آماده‌سازی دوربین…";
+"Camera access is off" = "دسترسی به دوربین بسته است";
+"Allow camera access in Settings, or enter the code by hand." = "دسترسی به دوربین را در تنظیمات مجاز کنید یا کد را دستی وارد کنید.";
+"Camera not available" = "دوربین در دسترس نیست";
+"You can still pair by entering the code manually." = "برای جفت‌سازی می‌توانید کد را دستی وارد کنید.";
+"Pairing code" = "کد جفت‌سازی";
+"Paste pairing code" = "جای‌گذاری کد جفت‌سازی";
+"Paste a pairing link or type the code from Clark on your Android phone." = "پیوند جفت‌سازی را جای‌گذاری کنید یا کدی را که کلارک روی گوشی اندرویدی نشان می‌دهد وارد کنید.";

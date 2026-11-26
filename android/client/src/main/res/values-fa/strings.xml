@@ -8,6 +8,7 @@
     <string name="allow_background">اجازه اجرا در پس‌زمینه</string>
     <string name="android_phone">گوشی اندروید</string>
     <string name="another_device">دستگاه دیگر</string>
+    <string name="app_name">کلارک همراه</string>
     <string name="answer">پاسخ</string>
     <string name="battery">باتری %1$d٪%2$s</string>
     <string name="block">مسدود کردن</string>
@@ -42,7 +43,7 @@
     <string name="delete">حذف</string>
     <string name="delete_conversation">حذف گفتگو</string>
     <string name="delete_conversation_confirm">این گفتگو روی گوشی اندروید حذف شود؟</string>
-    <string name="dial_with">تماس با Tether Client</string>
+    <string name="dial_with">تماس با کلارک همراه</string>
     <string name="edit">ویرایش</string>
     <string name="end_call">پایان تماس</string>
     <string name="err_call_failed">تماس ناموفق بود</string>
@@ -82,11 +83,11 @@
     <string name="not_delivered">تحویل نشد</string>
     <string name="pair">جفت کردن</string>
     <string name="pair_again">جفت کردن دوباره</string>
-    <string name="pair_bad_code">این کد جفت‌سازی Tether نیست.</string>
+    <string name="pair_bad_code">این کد جفت‌سازی کلارک نیست.</string>
     <string name="pair_manual_hint">یا کد را بچسبانید: tether1:…</string>
     <string name="pair_no_camera">دوربین در دسترس نیست: کد را پایین بچسبانید.</string>
-    <string name="pair_scan_hint">روی گوشی اندرویدی که سیم‌کارت‌ها در آن است Tether را باز کنید و «جفت کردن آیفون» را بزنید، سپس این دوربین را به سمت کد بگیرید.</string>
-    <string name="pair_guide">۱. Tether را روی گوشی اندرویدی که سیم‌کارت‌ها در آن است نصب کنید و مراحل راه‌اندازی آن را تمام کنید.
+    <string name="pair_scan_hint">روی گوشی اندرویدی که سیم‌کارت‌ها در آن است کلارک را باز کنید و «جفت کردن آیفون» را بزنید، سپس این دوربین را به سمت کد بگیرید.</string>
+    <string name="pair_guide">۱. کلارک را روی گوشی اندرویدی که سیم‌کارت‌ها در آن است نصب کنید و مراحل راه‌اندازی آن را تمام کنید.
 ۲. همان‌جا «جفت کردن آیفون» را بزنید: یک کد QR به مدت ۵ دقیقه نمایش داده می‌شود.
 ۳. دوربین را این‌جا مجاز کنید و به سمت کد بگیرید (یا کد را پایین بچسبانید).
 ۴. وقتی پرسیده شد، دستگاه‌های نزدیک (بلوتوث)، تلفن، میکروفون و اعلان‌ها را مجاز کنید: اتصال، تماس‌ها، صدای تماس و پیامک‌های تازه از راه آن‌ها می‌آیند.</string>

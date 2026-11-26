@@ -79,7 +79,7 @@ jobs:
   # so CI asks for one per push instead of two.
   apple:
     name: Apple (Swift SDK, docs, examples, iPhone app)
-    runs-on: macos-15
+    runs-on: macos-15-intel
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v7
@@ -89,6 +89,7 @@ jobs:
         run: |
           for p in iOS:iphoneos tvOS:appletvos watchOS:watchos visionOS:xros; do
             name=${p%%:*}; sdk=${p##*:}
+            if [[ "$sdk" == xros && "$(uname -m)" == x86_64 ]]; then echo "visionOS is unavailable on Intel, skipped"; continue; fi
             if ! xcodebuild -showsdks | grep -q -- "-sdk $sdk"; then echo "$name: SDK not installed, skipped"; continue; fi
             xcodebuild -scheme Tether -destination "generic/platform=$name" -derivedDataPath build-sdk \
               -skipMacroValidation build -quiet

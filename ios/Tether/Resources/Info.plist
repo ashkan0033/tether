@@ -41,7 +41,7 @@
 	<key>TetherCommunicationNotifications</key>
 	<string>$(TETHER_COMM_NOTIFICATIONS)</string>
 	<key>NSBluetoothAlwaysUsageDescription</key>
-	<string>Tether connects to your Android phone over Bluetooth to bring its calls and messages to this iPhone.</string>
+	<string>Clark connects to your Android phone over Bluetooth to bring its calls and messages to this iPhone.</string>
 	<key>NSCameraUsageDescription</key>
 	<string>The camera scans the pairing code shown on your Android phone.</string>
 	<key>NSMicrophoneUsageDescription</key>
