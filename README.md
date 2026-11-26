@@ -13,7 +13,7 @@
 | رابط فارسی آیفون | صفحهٔ اتصال، اسکن QR و ورود دستی کد بازطراحی شده‌اند. صفحهٔ اسکن برای دوربین غیرفعال یا غیرقابل‌دسترس مسیر جایگزین دارد |
 | گوشی واقعی | جفت‌سازی بلوتوث، تماس واقعی، صدای دوطرفه، پیامک و اتصال دوباره باید روی دستگاه‌های واقعی تأیید شوند |
 
-توسعهٔ اپ در شاخهٔ [`clark/app-branding`](https://github.com/ashkan0033/tether/tree/clark/app-branding) و [Pull Request شمارهٔ ۱](https://github.com/ashkan0033/tether/pull/1) جریان دارد. [نتیجهٔ CI نسخهٔ بررسی‌شده](https://github.com/ashkan0033/tether/actions/runs/45600836462) را می‌توانید در GitHub ببینید. برای آیفون هنوز نسخهٔ امضاشدهٔ قابل نصب روی گوشی منتشر نشده است.
+تغییرات رابط و نام کلارک با [Pull Request شمارهٔ ۱](https://github.com/ashkan0033/tether/pull/1) در شاخهٔ اصلی ادغام شده‌اند. [نتیجهٔ CI نسخهٔ بررسی‌شده](https://github.com/ashkan0033/tether/actions/runs/45600836462) را می‌توانید در GitHub ببینید. برای آیفون هنوز نسخهٔ امضاشدهٔ قابل نصب روی گوشی منتشر نشده است.
 
 ## دستگاه‌های مورد نیاز
 
@@ -35,10 +35,10 @@
 
 ## ساخت از سورس
 
-ابتدا شاخهٔ توسعه را بگیرید:
+ابتدا شاخهٔ اصلی را بگیرید:
 
 ```bash
-git clone --branch clark/app-branding https://github.com/ashkan0033/tether.git clark
+git clone https://github.com/ashkan0033/tether.git clark
 cd clark
 ```
 
